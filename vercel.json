@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm --filter @workspace/s-interior-portfolio run build",
+  "outputDirectory": "artifacts/s-interior-portfolio/dist/public",
+  "installCommand": "pnpm install --frozen-lockfile"
+}

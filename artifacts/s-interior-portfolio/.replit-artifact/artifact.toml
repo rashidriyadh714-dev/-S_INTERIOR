@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "S Interior & Construction"
+description = "A realistic, editorial portfolio website for S Interior & Construction, showcasing architectural design, interiors, construction, and CNC signage with supplied project photography and direct contact links."
+version = "1.0.0"
+id = "artifacts/s-interior-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24098
+
+[services.development]
+run = "pnpm --filter @workspace/s-interior-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/s-interior-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/s-interior-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24098"
+BASE_PATH = "/"
