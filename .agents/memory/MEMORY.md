@@ -1,1 +1,1 @@
-- [Portfolio visual direction](portfolio-visual-direction.md) — keep this architecture site realistic; use supplied images honestly and avoid invented commissions.
+- [Portfolio visual direction](portfolio-visual-direction.md) — keep imagery honest and the architecture portfolio realistic, responsive, and touch-friendly.
